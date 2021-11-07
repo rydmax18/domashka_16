@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domashka 16</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+        <div class="dog">
+          <section class="appointment">
+            <div class="appointment__container">
+              <div class="appointment__inner">
+                <div class="appointment__card-form form-card">
+                  <h3 class="form-card__title">Make an appointment</h3>
+                  <form class="form-card__form" action="#">
+                    <div class="form-card__box">
+                      <div class="form-card__item">
+                        <input
+                          class="form-card__input"
+                          type="text"
+                          name="name"
+                          required
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="form-card__item">
+                        <input
+                          class="form-card__input"
+                          type="email"
+                          name="email"
+                          required
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="form-card__item">
+                        <input
+                          class="form-card__input"
+                          type="tel"
+                          name="phone"
+                          required
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                      <div class="form-card__item">
+                        <select class="form-card__select" name="select">
+                          <option value="1" selected>Select Service</option>
+                          <option value="2">Select Service</option>
+                          <option value="3">Select Service</option>
+                          <option value="4">Select Service</option>
+                          <option value="5">Select Service</option>
+                        </select>
+                      </div>
+                    </div>
+                    <textarea
+                      class="form-card__textarea"
+                      placeholder="Tell us about your puppers include his/her name"
+                    ></textarea>
+                    <button class="form-card__button" type="submit">
+                      Make an Appointment
+                    </button>
+                  </form>
+                </div>
+
+                <div class="appointment__content">
+                  <p class="appointment__text">
+                    Maxime placeat facere possimus omnis
+                  </p>
+                  <p class="appointment__num">5,700+</p>
+                  <p class="appointment__description">customers served</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="tech">
+          <div class="tech__summary summary">
+            <h3 class="summary__title">Summary</h3>
+            <form class="summary__form form-summary" action="#">
+              <select class="form-summary__select" name="tax" id="tax" required>
+                <option value="1" selected>Estimate Shipping and Tax</option>
+                <option value="2">Estimate Shipping and Tax</option>
+                <option value="3">Estimate Shipping and Tax</option>
+                <option value="4">Estimate Shipping and Tax</option>
+              </select>
+              <p class="form-summary__description">
+                Enter your destination to get a shipping estimate.
+              </p>
+
+              <label class="form-summary__label" for="country">Country</label>
+              <select
+                class="form-summary__select-country"
+                name="country"
+                id="country"
+                required
+              >
+                <option value="1" selected>Australia</option>
+                <option value="2">Ukraine</option>
+                <option value="3">Germany</option>
+                <option value="4">USA</option>
+                <option value="4">Great Britain</option>
+              </select>
+
+              <label class="form-summary__label" for="region"
+                >State/Province</label
+              >
+              <input
+                class="form-summary__input"
+                name="region"
+                id="region"
+                required
+                type="text"
+              />
+
+              <label class="form-summary__label" for="zip"
+                >Zip/Postal Code</label
+              >
+              <input
+                class="form-summary__input"
+                name="zip"
+                id="zip"
+                required
+                type="text"
+              />
+
+              <div class="form-summary__radiobuttons radiobuttons">
+                <h4 class="radiobuttons__title">Standard Rate</h4>
+                <div class="radiobuttons__box">
+                  <input
+                    class="radiobuttons__radio"
+                    type="radio"
+                    name="radio"
+                    id="radio-1"
+                    checked
+                  />
+                  <label class="radiobuttons__description" for="radio-1"
+                    >Price may vary depending on the item/destination. Shop
+                    Staff will contact you. $21.00</label
+                  >
+                </div>
+                <h4 class="radiobuttons__title">Pickup from store</h4>
+                <div class="radiobuttons__box">
+                  <input
+                    class="radiobuttons__radio"
+                    type="radio"
+                    name="radio"
+                    id="radio-2"
+                  />
+                  <label class="radiobuttons__description" for="radio-2"
+                    >1234 Street Adress City Address, 1234 $0.00</label
+                  >
+                </div>
+              </div>
+              <div class="form-summary__discount">
+                <select
+                  class="form-summary__select"
+                  name="discount"
+                  id="discount"
+                >
+                  <option value="1" selected>Apply Discount Code</option>
+                  <option value="2">Apply Discount Code</option>
+                  <option value="3">Apply Discount Code</option>
+                  <option value="4">Apply Discount Code</option>
+                </select>
+
+                <label class="form-summary__label" for="code"
+                  >Enter discount code</label
+                >
+                <input
+                  class="form-summary__input"
+                  type="number"
+                  name="code"
+                  id="code"
+                  placeholder="Enter Discount code"
+                />
+              </div>
+              <button class="form-summary__button" type="submit">
+                Apply Discount
+              </button>
+            </form>
+          </div>
+
+          <div class="tech__register register">
+            <h3 class="register__title">Registered Customers</h3>
+            <p class="register__description">
+              If you have an account, sign in with your email address.
+            </p>
+            <form class="register__form" action="#">
+              <label class="register__label" for="regmail"
+                >Email <span>*</span></label
+              >
+              <input
+                class="register__input"
+                type="email"
+                required
+                placeholder="Your Name"
+                id="regmail"
+              />
+              <label class="register__label" for="regpass"
+                >Password <span>*</span></label
+              >
+              <input
+                class="register__input"
+                type="password"
+                required
+                placeholder="Your Name"
+              />
+              <div class="register__bottom">
+                <button class="register__button">Sign In</button>
+                <a class="register__link" href="#">Forgot Your Password?</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="tech__shipping shipping">
+            <h3 class="shipping__title">Shipping Address</h3>
+            <form class="shipping__form" action="#">
+              <label class="shipping__label" for="email"
+                >Email Address <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="email"
+                required
+                autocomplete="off"
+                name="email"
+                id="email"
+              />
+
+              <p class="shipping__description">
+                You can create an account after checkout.
+              </p>
+
+              <label class="shipping__label" for="name"
+                >First Name <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="name"
+                name="name"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="last-name"
+                >Last Name <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="last-name"
+                name="last-name"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="company"
+                >Company <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="company"
+                name="company"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="street"
+                >Street Address *</label
+              >
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="street"
+                name="street"
+                autocomplete="off"
+              />
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="street-2"
+                name="street"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="city"
+                >City <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="text"
+                required
+                id="city"
+                name="city"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="state"
+                >State/Province <span>*</span></label
+              >
+              <select class="shipping__select" name="state" id="state">
+                <option value="1" selected>
+                  Please, select a region, state or province
+                </option>
+                <option value="2">state-1</option>
+                <option value="3">state-2</option>
+                <option value="4">state-3</option>
+                <option value="5">state-4</option>
+              </select>
+
+              <label class="shipping__label" for="zip"
+                >Zip/Postal Code <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="number"
+                required
+                id="zip"
+                name="zip"
+                autocomplete="off"
+              />
+
+              <label class="shipping__label" for="country"
+                >Country <span>*</span></label
+              >
+              <select class="shipping__select" name="country" id="country">
+                <option value="1" selected>United States</option>
+                <option value="2">Ukraine</option>
+                <option value="3">Great Britain</option>
+                <option value="4">Brasil</option>
+                <option value="5">Canada</option>
+              </select>
+
+              <label class="shipping__label" for="phone"
+                >Phone Number <span>*</span></label
+              >
+              <input
+                class="shipping__input"
+                type="tel"
+                required
+                id="phone"
+                name="phone"
+                autocomplete="off"
+              />
+
+              <div class="shipping__radio-box">
+                <h5 class="shipping__subtitle">Standard Rate</h5>
+                <div class="shipping__inner">
+                  <div class="shipping__choice">
+                    <input
+                      class="shipping__radio"
+                      name="price"
+                      type="radio"
+                      id="standart"
+                      checked
+                    />
+                    <label class="shipping__text" for="standart"
+                      >Price may vary depending on the item/destination. Shop
+                      Staff will contact you. $21.00</label
+                    >
+                  </div>
+
+                  <span class="shipping__price">$21.00</span>
+                </div>
+
+                <h5 class="shipping__subtitle">Pickup from store</h5>
+                <div class="shipping__inner">
+                  <div class="shipping__choice">
+                    <input
+                      class="shipping__radio"
+                      name="price"
+                      type="radio"
+                      id="pickup"
+                    />
+                    <label class="shipping__text" for="pickup"
+                      >1234 Street Adress City Address, 1234
+                    </label>
+                  </div>
+
+                  <span class="shipping__price">$0.00</span>
+                </div>
+              </div>
+
+              <button class="shipping__button">Next</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
