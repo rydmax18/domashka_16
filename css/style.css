@@ -496,6 +496,7 @@ body {
 .shipping__select {
   font-size: 14px;
   line-height: 1.43;
+  background-color: #fff;
 }
 .shipping__radio-box {
   padding: 8px 0 0 0;
